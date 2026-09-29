@@ -1,221 +1,270 @@
-<svg id="gh-dark-mode-only" width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="210" xmlns="http://www.w3.org/2000/svg">
 <style>
-svg {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-#background {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  fill: white;
-  stroke: rgb(225, 228, 232);
-  stroke-width: 1px;
-  rx: 6px;
-  ry: 6px;
-}
-
-#gh-dark-mode-only:target #background {
-  fill: #0d1117;
-  stroke-width: 0.5px;
-}
-
-foreignObject {
-  width: calc(100% - 10px - 32px);
-  height: calc(100% - 10px - 24px);
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.75em;
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(36, 41, 46);
-  fill: rgb(36, 41, 46);
-}
-
-#gh-dark-mode-only:target h2 {
-  color: #c9d1d9;
-  fill: #c9d1d9;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-li {
-  display: inline-flex;
-  font-size: 12px;
-  margin-right: 2ch;
-  align-items: center;
-  flex-wrap: nowrap;
-  transform: translateX(-500%);
-  animation: slideIn 2s ease-in-out forwards;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
+  svg {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-size: 14px;
+    line-height: 21px;
   }
-}
 
-div.ellipsis {
-  height: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  #bg {
+    fill: #ffffff;
+    stroke: #e1e4e8;
+    stroke-width: 1px;
+  }
 
-.octicon {
-  fill: rgb(88, 96, 105);
-  margin-right: 0.5ch;
-  vertical-align: top;
-}
+  @media (prefers-color-scheme: dark) {
+    #bg {
+      fill: #0d1117;
+      stroke: #30363d;
+    }
+  }
 
-#gh-dark-mode-only:target .octicon {
-  color: #8b949e;
-  fill: #8b949e;
-}
+  foreignObject {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+  }
 
-.progress {
-  display: flex;
-  height: 8px;
-  overflow: hidden;
-  background-color: rgb(225, 228, 232);
-  border-radius: 6px;
-  outline: 1px solid transparent;
-  margin-bottom: 1em;
-}
+  .card {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    overflow: hidden;
+  }
 
-#gh-dark-mode-only:target .progress {
-  background-color: rgba(110, 118, 129, 0.4);
-}
+  .header {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0969da;
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d0d7de;
+  }
 
-.progress-item {
-  outline: 2px solid rgb(225, 228, 232);
-  border-collapse: collapse;
-}
+  @media (prefers-color-scheme: dark) {
+    .header {
+      color: #58a6ff;
+      border-bottom-color: #21262d;
+    }
+  }
 
-#gh-dark-mode-only:target .progress-item {
-  outline: 2px solid #393f47;
-}
+  .progress-bar {
+    display: flex;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e8eaed;
+    margin-bottom: 14px;
+  }
 
-.lang {
-  font-weight: 600;
-  margin-right: 4px;
-  color: rgb(36, 41, 46);
-}
+  @media (prefers-color-scheme: dark) {
+    .progress-bar {
+      background-color: #21262d;
+    }
+  }
 
-#gh-dark-mode-only:target .lang {
-  color: #c9d1d9;
-}
+  .progress-segment {
+    height: 100%;
+    transition: width 0.3s ease;
+    opacity: 0;
+    animation: growWidth 0.6s ease-out forwards;
+  }
 
-.percent {
-  color: rgb(88, 96, 105)
-}
+  @keyframes growWidth {
+    from { width: 0 !important; opacity: 0; }
+    to { opacity: 1; }
+  }
 
-#gh-dark-mode-only:target .percent {
-  color: #8b949e;
-}
+  .lang-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+
+  .lang-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #57606a;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .lang-item {
+      color: #8b949e;
+    }
+  }
+
+  .lang-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .lang-name {
+    font-weight: 600;
+    color: #1f2328;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .lang-name {
+      color: #e6edf3;
+    }
+  }
+
+  .lang-pct {
+    font-variant-numeric: tabular-nums;
+    color: #6e7781;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .lang-pct {
+      color: #8b949e;
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 </style>
-<g>
-<rect x="5" y="5" id="background" />
-<g>
-<foreignObject x="21" y="17" width="318" height="176">
-<div xmlns="http://www.w3.org/1999/xhtml" class="ellipsis">
 
-<h2>Languages Used (By File Size)</h2>
+<rect id="bg" x="0.5" y="0.5" width="359" height="209" rx="6" ry="6"/>
 
-<div>
-<span class="progress">
-<span style="background-color: #89e051;width: 44.788%;" class="progress-item"></span><span style="background-color: #00ADD8;width: 29.983%;" class="progress-item"></span><span style="background-color: #3572A5;width: 10.183%;" class="progress-item"></span><span style="background-color: #e34c26;width: 7.595%;" class="progress-item"></span><span style="background-color: #563d7c;width: 5.066%;" class="progress-item"></span><span style="background-color: #f1e05a;width: 2.254%;" class="progress-item"></span><span style="background-color: #384d54;width: 0.111%;" class="progress-item"></span><span style="background-color: #3178c6;width: 0.018%;" class="progress-item"></span>
-</span>
-</div>
-
-<ul>
-
-
-<li style="animation-delay: 0ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#89e051;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">Shell</span>
-<span class="percent">44.79%</span>
+<foreignObject x="10" y="10" width="340" height="190">
+  <div xmlns="http://www.w3.org/1999/xhtml" class="card">
+    <h2 class="header">Languages Used (By File Size)</h2>
+    <div class="progress-bar">
+      <span class="progress-segment" style="background-color: #3572A5; width: 66.409%; animation-delay: 0ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 14.959%; animation-delay: 80ms;"></span><span class="progress-segment" style="background-color: #f34b7d; width: 7.547%; animation-delay: 160ms;"></span><span class="progress-segment" style="background-color: #3178c6; width: 4.904%; animation-delay: 240ms;"></span><span class="progress-segment" style="background-color: #fedf5b; width: 3.181%; animation-delay: 320ms;"></span><span class="progress-segment" style="background-color: #336790; width: 1.823%; animation-delay: 400ms;"></span><span class="progress-segment" style="background-color: #555555; width: 0.849%; animation-delay: 480ms;"></span><span class="progress-segment" style="background-color: #e34c26; width: 0.185%; animation-delay: 560ms;"></span><span class="progress-segment" style="background-color: #4d41b1; width: 0.061%; animation-delay: 640ms;"></span><span class="progress-segment" style="background-color: #f1e05a; width: 0.028%; animation-delay: 720ms;"></span><span class="progress-segment" style="background-color: #663399; width: 0.016%; animation-delay: 800ms;"></span><span class="progress-segment" style="background-color: #844FBA; width: 0.014%; animation-delay: 880ms;"></span><span class="progress-segment" style="background-color: #427819; width: 0.009%; animation-delay: 960ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 0.007%; animation-delay: 1040ms;"></span><span class="progress-segment" style="background-color: #f0c040; width: 0.005%; animation-delay: 1120ms;"></span><span class="progress-segment" style="background-color: #384d54; width: 0.004%; animation-delay: 1200ms;"></span><span class="progress-segment" style="background-color: #7e7eff; width: 0.000%; animation-delay: 1280ms;"></span>
+    </div>
+    <ul class="lang-list">
+      
+<li class="lang-item" style="animation-delay: 0ms;">
+  <span class="lang-dot" style="background-color: #3572A5;"></span>
+  <span class="lang-name">Python</span>
+  <span class="lang-pct">66.41%</span>
 </li>
 
 
-<li style="animation-delay: 150ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#00ADD8;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">Go</span>
-<span class="percent">29.98%</span>
+<li class="lang-item" style="animation-delay: 60ms;">
+  <span class="lang-dot" style="background-color: #00ADD8;"></span>
+  <span class="lang-name">Go</span>
+  <span class="lang-pct">14.96%</span>
 </li>
 
 
-<li style="animation-delay: 300ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#3572A5;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">Python</span>
-<span class="percent">10.18%</span>
+<li class="lang-item" style="animation-delay: 120ms;">
+  <span class="lang-dot" style="background-color: #f34b7d;"></span>
+  <span class="lang-name">C++</span>
+  <span class="lang-pct">7.55%</span>
 </li>
 
 
-<li style="animation-delay: 450ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#e34c26;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">HTML</span>
-<span class="percent">7.59%</span>
+<li class="lang-item" style="animation-delay: 180ms;">
+  <span class="lang-dot" style="background-color: #3178c6;"></span>
+  <span class="lang-name">TypeScript</span>
+  <span class="lang-pct">4.90%</span>
 </li>
 
 
-<li style="animation-delay: 600ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#563d7c;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">CSS</span>
-<span class="percent">5.07%</span>
+<li class="lang-item" style="animation-delay: 240ms;">
+  <span class="lang-dot" style="background-color: #fedf5b;"></span>
+  <span class="lang-name">Cython</span>
+  <span class="lang-pct">3.18%</span>
 </li>
 
 
-<li style="animation-delay: 750ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#f1e05a;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">JavaScript</span>
-<span class="percent">2.25%</span>
+<li class="lang-item" style="animation-delay: 300ms;">
+  <span class="lang-dot" style="background-color: #336790;"></span>
+  <span class="lang-name">PLpgSQL</span>
+  <span class="lang-pct">1.82%</span>
 </li>
 
 
-<li style="animation-delay: 900ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#384d54;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">Dockerfile</span>
-<span class="percent">0.11%</span>
+<li class="lang-item" style="animation-delay: 360ms;">
+  <span class="lang-dot" style="background-color: #555555;"></span>
+  <span class="lang-name">C</span>
+  <span class="lang-pct">0.85%</span>
 </li>
 
 
-<li style="animation-delay: 1050ms;">
-<svg xmlns="http://www.w3.org/2000/svg" class="octicon" style="fill:#3178c6;"
-viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
-fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
-<span class="lang">TypeScript</span>
-<span class="percent">0.02%</span>
+<li class="lang-item" style="animation-delay: 420ms;">
+  <span class="lang-dot" style="background-color: #e34c26;"></span>
+  <span class="lang-name">HTML</span>
+  <span class="lang-pct">0.18%</span>
 </li>
 
 
+<li class="lang-item" style="animation-delay: 480ms;">
+  <span class="lang-dot" style="background-color: #4d41b1;"></span>
+  <span class="lang-name">Fortran</span>
+  <span class="lang-pct">0.06%</span>
+</li>
 
-</ul>
 
-</div>
+<li class="lang-item" style="animation-delay: 540ms;">
+  <span class="lang-dot" style="background-color: #f1e05a;"></span>
+  <span class="lang-name">JavaScript</span>
+  <span class="lang-pct">0.03%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 600ms;">
+  <span class="lang-dot" style="background-color: #663399;"></span>
+  <span class="lang-name">CSS</span>
+  <span class="lang-pct">0.02%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 660ms;">
+  <span class="lang-dot" style="background-color: #844FBA;"></span>
+  <span class="lang-name">HCL</span>
+  <span class="lang-pct">0.01%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 720ms;">
+  <span class="lang-dot" style="background-color: #427819;"></span>
+  <span class="lang-name">Makefile</span>
+  <span class="lang-pct">0.01%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 780ms;">
+  <span class="lang-dot" style="background-color: #00ADD8;"></span>
+  <span class="lang-name">Go Template</span>
+  <span class="lang-pct">0.01%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 840ms;">
+  <span class="lang-dot" style="background-color: #f0c040;"></span>
+  <span class="lang-name">Smarty</span>
+  <span class="lang-pct">0.01%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 900ms;">
+  <span class="lang-dot" style="background-color: #384d54;"></span>
+  <span class="lang-name">Dockerfile</span>
+  <span class="lang-pct">0.00%</span>
+</li>
+
+
+<li class="lang-item" style="animation-delay: 960ms;">
+  <span class="lang-dot" style="background-color: #7e7eff;"></span>
+  <span class="lang-name">Nix</span>
+  <span class="lang-pct">0.00%</span>
+</li>
+
+
+    </ul>
+  </div>
 </foreignObject>
-</g>
-</g>
 </svg>

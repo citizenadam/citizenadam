@@ -141,35 +141,35 @@
   <div xmlns="http://www.w3.org/1999/xhtml" class="card">
     <h2 class="header">Languages Used (By File Size)</h2>
     <div class="progress-bar">
-      <span class="progress-segment" style="background-color: #00ADD8; width: 63.520%; animation-delay: 0ms;"></span><span class="progress-segment" style="background-color: #3178c6; width: 20.544%; animation-delay: 80ms;"></span><span class="progress-segment" style="background-color: #336790; width: 7.635%; animation-delay: 160ms;"></span><span class="progress-segment" style="background-color: #3572A5; width: 7.074%; animation-delay: 240ms;"></span><span class="progress-segment" style="background-color: #e34c26; width: 0.773%; animation-delay: 320ms;"></span><span class="progress-segment" style="background-color: #f1e05a; width: 0.162%; animation-delay: 400ms;"></span><span class="progress-segment" style="background-color: #663399; width: 0.094%; animation-delay: 480ms;"></span><span class="progress-segment" style="background-color: #844FBA; width: 0.060%; animation-delay: 560ms;"></span><span class="progress-segment" style="background-color: #384d54; width: 0.046%; animation-delay: 640ms;"></span><span class="progress-segment" style="background-color: #427819; width: 0.037%; animation-delay: 720ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 0.029%; animation-delay: 800ms;"></span><span class="progress-segment" style="background-color: #f0c040; width: 0.023%; animation-delay: 880ms;"></span><span class="progress-segment" style="background-color: #7e7eff; width: 0.001%; animation-delay: 960ms;"></span>
+      <span class="progress-segment" style="background-color: #00ADD8; width: 63.831%; animation-delay: 0ms;"></span><span class="progress-segment" style="background-color: #3178c6; width: 20.349%; animation-delay: 80ms;"></span><span class="progress-segment" style="background-color: #336790; width: 7.556%; animation-delay: 160ms;"></span><span class="progress-segment" style="background-color: #3572A5; width: 7.049%; animation-delay: 240ms;"></span><span class="progress-segment" style="background-color: #e34c26; width: 0.765%; animation-delay: 320ms;"></span><span class="progress-segment" style="background-color: #f1e05a; width: 0.161%; animation-delay: 400ms;"></span><span class="progress-segment" style="background-color: #663399; width: 0.093%; animation-delay: 480ms;"></span><span class="progress-segment" style="background-color: #844FBA; width: 0.060%; animation-delay: 560ms;"></span><span class="progress-segment" style="background-color: #384d54; width: 0.046%; animation-delay: 640ms;"></span><span class="progress-segment" style="background-color: #427819; width: 0.037%; animation-delay: 720ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 0.029%; animation-delay: 800ms;"></span><span class="progress-segment" style="background-color: #f0c040; width: 0.023%; animation-delay: 880ms;"></span><span class="progress-segment" style="background-color: #7e7eff; width: 0.001%; animation-delay: 960ms;"></span>
     </div>
     <ul class="lang-list">
       
 <li class="lang-item" style="animation-delay: 0ms;">
   <span class="lang-dot" style="background-color: #00ADD8;"></span>
   <span class="lang-name">Go</span>
-  <span class="lang-pct">63.52%</span>
+  <span class="lang-pct">63.83%</span>
 </li>
 
 
 <li class="lang-item" style="animation-delay: 60ms;">
   <span class="lang-dot" style="background-color: #3178c6;"></span>
   <span class="lang-name">TypeScript</span>
-  <span class="lang-pct">20.54%</span>
+  <span class="lang-pct">20.35%</span>
 </li>
 
 
 <li class="lang-item" style="animation-delay: 120ms;">
   <span class="lang-dot" style="background-color: #336790;"></span>
   <span class="lang-name">PLpgSQL</span>
-  <span class="lang-pct">7.64%</span>
+  <span class="lang-pct">7.56%</span>
 </li>
 
 
 <li class="lang-item" style="animation-delay: 180ms;">
   <span class="lang-dot" style="background-color: #3572A5;"></span>
   <span class="lang-name">Python</span>
-  <span class="lang-pct">7.07%</span>
+  <span class="lang-pct">7.05%</span>
 </li>
 
 

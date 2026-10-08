@@ -141,21 +141,21 @@
   <div xmlns="http://www.w3.org/1999/xhtml" class="card">
     <h2 class="header">Languages Used (By File Size)</h2>
     <div class="progress-bar">
-      <span class="progress-segment" style="background-color: #00ADD8; width: 63.886%; animation-delay: 0ms;"></span><span class="progress-segment" style="background-color: #3178c6; width: 20.319%; animation-delay: 80ms;"></span><span class="progress-segment" style="background-color: #336790; width: 7.545%; animation-delay: 160ms;"></span><span class="progress-segment" style="background-color: #3572A5; width: 7.039%; animation-delay: 240ms;"></span><span class="progress-segment" style="background-color: #e34c26; width: 0.764%; animation-delay: 320ms;"></span><span class="progress-segment" style="background-color: #f1e05a; width: 0.160%; animation-delay: 400ms;"></span><span class="progress-segment" style="background-color: #663399; width: 0.093%; animation-delay: 480ms;"></span><span class="progress-segment" style="background-color: #844FBA; width: 0.060%; animation-delay: 560ms;"></span><span class="progress-segment" style="background-color: #384d54; width: 0.046%; animation-delay: 640ms;"></span><span class="progress-segment" style="background-color: #427819; width: 0.037%; animation-delay: 720ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 0.029%; animation-delay: 800ms;"></span><span class="progress-segment" style="background-color: #f0c040; width: 0.023%; animation-delay: 880ms;"></span><span class="progress-segment" style="background-color: #7e7eff; width: 0.001%; animation-delay: 960ms;"></span>
+      <span class="progress-segment" style="background-color: #00ADD8; width: 63.927%; animation-delay: 0ms;"></span><span class="progress-segment" style="background-color: #3178c6; width: 20.296%; animation-delay: 80ms;"></span><span class="progress-segment" style="background-color: #336790; width: 7.536%; animation-delay: 160ms;"></span><span class="progress-segment" style="background-color: #3572A5; width: 7.031%; animation-delay: 240ms;"></span><span class="progress-segment" style="background-color: #e34c26; width: 0.763%; animation-delay: 320ms;"></span><span class="progress-segment" style="background-color: #f1e05a; width: 0.160%; animation-delay: 400ms;"></span><span class="progress-segment" style="background-color: #663399; width: 0.092%; animation-delay: 480ms;"></span><span class="progress-segment" style="background-color: #844FBA; width: 0.060%; animation-delay: 560ms;"></span><span class="progress-segment" style="background-color: #384d54; width: 0.046%; animation-delay: 640ms;"></span><span class="progress-segment" style="background-color: #427819; width: 0.037%; animation-delay: 720ms;"></span><span class="progress-segment" style="background-color: #00ADD8; width: 0.029%; animation-delay: 800ms;"></span><span class="progress-segment" style="background-color: #f0c040; width: 0.023%; animation-delay: 880ms;"></span><span class="progress-segment" style="background-color: #7e7eff; width: 0.001%; animation-delay: 960ms;"></span>
     </div>
     <ul class="lang-list">
       
 <li class="lang-item" style="animation-delay: 0ms;">
   <span class="lang-dot" style="background-color: #00ADD8;"></span>
   <span class="lang-name">Go</span>
-  <span class="lang-pct">63.89%</span>
+  <span class="lang-pct">63.93%</span>
 </li>
 
 
 <li class="lang-item" style="animation-delay: 60ms;">
   <span class="lang-dot" style="background-color: #3178c6;"></span>
   <span class="lang-name">TypeScript</span>
-  <span class="lang-pct">20.32%</span>
+  <span class="lang-pct">20.30%</span>
 </li>
 
 
@@ -169,7 +169,7 @@
 <li class="lang-item" style="animation-delay: 180ms;">
   <span class="lang-dot" style="background-color: #3572A5;"></span>
   <span class="lang-name">Python</span>
-  <span class="lang-pct">7.04%</span>
+  <span class="lang-pct">7.03%</span>
 </li>
 
 
